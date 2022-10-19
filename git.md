@@ -96,6 +96,10 @@ git rebase -i HEAD~3 // 变基，合并多条commit为一条
 1、fatal: refusing to merge unrelated histories
 
 解决方案：git pull –-allow-unrelated-histories
+
+2、远程仓库与本地仓库分支名不同，git push简写失效
+
+解决方案: git config push.default upstream    // [链接](https://git-scm.com/docs/git-config)
 ```
 
 
