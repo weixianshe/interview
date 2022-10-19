@@ -82,12 +82,20 @@ git remote add <remote-name> git地址 // 添加远程仓库
 git remote rename [old] [new]    // 修改远程仓库名
 git remote remove [name]   // 删除远程仓库
 git pull 远程仓库名 [远程分支:本地分支]  // 拉取最新代码到本地 是 git fetch + git merge
+git branch --set-upstream-to=origin/<branch> master // 将远程分支与本地分支建立关联
 ```
 #### 合并命令
 
 ``` js
 git merge 分支名 // 将分支合并到当前分支
 git rebase -i HEAD~3 // 变基，合并多条commit为一条
+```
+
+#### git常见问题
+```
+1、fatal: refusing to merge unrelated histories
+
+解决方案：git pull –-allow-unrelated-histories
 ```
 
 
